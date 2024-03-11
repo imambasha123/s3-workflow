@@ -1,2 +1,6 @@
-# s3-workflow
-s3 bucket
+# terraform-workflow
+
+1.terraform init
+2.terraform validate
+3.terraform plan
+4.terraform apply
