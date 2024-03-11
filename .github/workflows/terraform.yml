@@ -25,11 +25,14 @@ jobs:
       - name: Initialize Terraform
         run: terraform init
 
-      #- name: Apply Terraform Changes
-     #   run: terraform apply -auto-approve
+      - name: Plan Terraform
+        run: terraform plan
+        
+      - name: Apply Terraform Changes
+        run: terraform apply -auto-approve
       
       #- name: Cleanup Terraform Files
-      #  run: terraform destroy -auto-approve
+       # run: terraform destroy -auto-approve
         
           
     
